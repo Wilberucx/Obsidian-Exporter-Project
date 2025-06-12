@@ -1,0 +1,11 @@
+# Archivos específicos de Python
+__pycache__/
+*.pyc
+
+# Archivos específicos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar la carpeta de exportaciones generadas (temporal)
+exportaciones_generadas/
+Export_from_obsidian_*

@@ -47,6 +47,16 @@ Abre una terminal (CMD o PowerShell) y ejecuta el siguiente comando para obtener
 
 ```powershell
 python -c "import sysconfig; print(sysconfig.get_path('scripts'))"
+```
+Copia la ruta que aparece en la salida.
+2. Añade la ruta a tu PATH (Instrucciones para Windows):
+Presiona la tecla de Windows, escribe variables de entorno y selecciona "Editar las variables de entorno del sistema".
+En la ventana que aparece, haz clic en "Variables de entorno...".
+En la sección "Variables de usuario", selecciona la variable Path y haz clic en "Editar...".
+Haz clic en "Nuevo" y pega la ruta de la carpeta de Scripts que copiaste.
+Haz clic en "Aceptar" en todas las ventanas para cerrar y guardar.
+Reinicia cualquier terminal que tengas abierta para que los cambios se apliquen.
+Una vez completada esta configuración única, la herramienta podrá encontrar todos los filtros necesarios.
 
 ## Guía de Uso Rápido
 

@@ -1,10 +1,4 @@
----
-aliases: 
-Area: 
-tags: []
-References: 
-cssclasses:
----
+
 # Obsidian Exporter Project
 
 Este proyecto es un conjunto de herramientas de Python diseñadas para exportar conocimiento estructurado desde [Obsidian](https://obsidian.md/) a formatos de documentos portátiles como PDF, DOCX y EPUB. La herramienta está pensada para ser flexible, potente y fácil de usar, dándole al usuario un control total sobre el contenido y la estructura de la exportación final.
@@ -31,13 +25,28 @@ El flujo de trabajo se divide en dos fases principales, cada una manejada por un
 - **Python 3.9+**
 - **Librerías de Python:**
   - `PyYAML`: Para procesar los metadatos de las notas.
-  - Se instala con: `pip install PyYAML`
-- **Pandoc:** La herramienta universal de conversión de documentos. Debe estar instalada y accesible en el PATH de tu sistema. [Instrucciones de instalación de Pandoc](https://pandoc.org/installing.html).
+  - `panflute`: El paquete de filtros de Pandoc que incluye la funcionalidad de inclusión de archivos.
+  - Instala ambas con:
+    ```bash
+    pip install PyYAML panflute
+    ```
+- **Pandoc:** La herramienta universal de conversión de documentos. Debe estar instalada y accesible en el `PATH` de tu sistema. [Instrucciones de instalación de Pandoc](https://pandoc.org/installing.html).
 - **Motor de PDF (Solo para exportar a PDF):** Pandoc necesita un motor de LaTeX. Se recomienda:
   - **MiKTeX** para Windows.
   - **MacTeX** para macOS.
   - **TeX Live** para Linux.
   (Se recomienda usar `xelatex` como motor, que suele venir incluido en estas distribuciones).
+
+### **Configuración del Entorno (¡Importante!)**
+
+Para que esta herramienta funcione correctamente, los filtros de Pandoc que se instalan con Python (como `pandoc-include`) deben ser localizables por Pandoc. Esto requiere que la carpeta de `Scripts` de tu instalación de Python esté en la variable de entorno `PATH` de tu sistema.
+
+**1. Encuentra tu carpeta de Scripts:**
+
+Abre una terminal (CMD o PowerShell) y ejecuta el siguiente comando para obtener la ruta exacta:
+
+```powershell
+python -c "import sysconfig; print(sysconfig.get_path('scripts'))"
 
 ## Guía de Uso Rápido
 

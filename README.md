@@ -1,7 +1,7 @@
 
 # Obsidian Exporter Project
 
-Este proyecto es un conjunto de herramientas de Python diseñadas para exportar conocimiento estructurado desde [Obsidian](https://obsidian.md/) a formatos de documentos portátiles como PDF, DOCX y EPUB. La herramienta está pensada para ser flexible, potente y fácil de usar, dándole al usuario un control total sobre el contenido y la estructura de la exportación final.
+Este proyecto es un conjunto de herramientas de Python diseñadas para exportar conocimiento estructurado desde [Obsidian](https://obsidian.md/) a formatos de documentos portátiles como PDF, DOCX y EPUB. La herramienta está pensada para ser flexible, potente y fácil de usar, dándole al usuario un control total sobre el contenido y la estructura de la exportación final. 
 
 ## Visión General
 
@@ -102,4 +102,4 @@ Una vez completada esta configuración única, la herramienta podrá encontrar t
 4.  ¡Listo! Tu documento final aparecerá en una subcarpeta llamada `_Converted` dentro del paquete de exportación.
 
 ---
-*Este proyecto está en desarrollo activo. Contribuciones y sugerencias son bienvenidas.*
+*Este proyecto está en desarrollo activo, no está del todo pulido. Si entiende del código, puede probarlo.Contribuciones y sugerencias son bienvenidas.*

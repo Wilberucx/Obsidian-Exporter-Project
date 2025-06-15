@@ -6,7 +6,7 @@ from tkinter import Tk, filedialog, messagebox
 import logging
 
 # --- CONFIGURACIÓN ---
-DEFAULT_SEARCH_DIR = Path("Ruta del vault")
+DEFAULT_SEARCH_DIR = Path("Ruta alojada las exportaciones")
 OUTPUT_SUBFOLDER_NAME = "_Converted"
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s', stream=sys.stdout)

@@ -1,9 +1,8 @@
 {
   "vault_paths": [
-    "C:/Obsidian.Vaults",
-    "C:/Obsidian.Vaults2"
+    "C:/Obsidian.Vaults"
   ],
-  "export_dir": "C:/Users/canto/OneDrive/Documents/Exportaciones de Obsidian",
+  "export_dir": "Ruta de las exportaciones",
   "exclude_folders": [
     ".obsidian",
     ".trash",
